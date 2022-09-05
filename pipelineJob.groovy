@@ -19,5 +19,13 @@ pipeline {
                 sh '../seed/build_scp.sh'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying Docker Image..............'
+                sh 'chmod 777 ../seed/deploy.sh'
+                sh '../seed/deploy.sh'
+            }
+        }
+
     }
 }
