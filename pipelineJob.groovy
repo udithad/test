@@ -15,6 +15,7 @@ pipeline {
         stage('Image') {
             steps {
                 echo 'Building Docker Image..............'
+                sh 'chmod 777 ../seed/build_scp.sh'
                 sh '../seed/build_scp.sh'
             }
         }
