@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-pwd
-
-docker-compose build
+docker-compose -f ../seed/docker-compose.yml build
