@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.jenkins</groupId>
 	<artifactId>test</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>latest</version>
 	<name>test</name>
 	<description>Jenkins Pipeline Test</description>
 	<properties>
