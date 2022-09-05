@@ -15,7 +15,7 @@ pipeline {
         stage('Image') {
             steps {
                 echo 'Building Docker Image..............'
-                sh './build_scp.sh'
+                sh 'build_scp.sh'
             }
         }
     }
