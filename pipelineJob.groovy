@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'Building Source Code--------------'
                 sh 'mvn clean install'
             }
         }
@@ -12,7 +13,8 @@ pipeline {
             }
         }
         stage('Image') {
-            dir ('Build Docker') {
+            steps {
+                echo 'Building Docker Image..............'
                 sh './build_scp.sh'
             }
         }
