@@ -1,0 +1,8 @@
+version: '3'
+services:
+  myspringapp:
+    image: myapplication
+    build: .
+    ports:
+      - "8081:8081"
+    restart: always

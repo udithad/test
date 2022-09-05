@@ -12,9 +12,8 @@ pipeline {
             }
         }
         stage('Image') {
-            dir ('test-service') {
-                def app = docker.build "localhost:8081/test-service:latest"
-                app.push()
+            dir ('Build Docker') {
+                sh 'build_scp.sh'
             }
         }
     }
