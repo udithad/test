@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Image') {
             dir ('Build Docker') {
-                sh 'build_scp.sh'
+                sh './build_scp.sh'
             }
         }
     }
