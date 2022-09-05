@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker-compose -f Infrastructure/docker/docker-compose.yml build
+docker-compose -f docker-compose.yml build
