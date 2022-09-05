@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Source Code--------------'
-                sh 'mvn clean install'
+                sh 'mvn -f ../seed clean install'
             }
         }
         stage('Test'){
